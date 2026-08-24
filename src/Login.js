@@ -1,3 +1,4 @@
+```jsx
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -21,12 +22,12 @@ function Login({ setIsLoggedIn }) {
     e.preventDefault();
 
     try {
-     const response = await fetch("https://ecomercebackand1shivam.onrender.com/login", {
+      const response = await fetch("https://ecomercebackand1shivam.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        credentials: "include",   // ✅ VERY IMPORTANT
+        credentials: "include",
         body: JSON.stringify(formData)
       });
 
@@ -171,3 +172,4 @@ const loginBtnStyle = {
 };
 
 export default Login;
+```
